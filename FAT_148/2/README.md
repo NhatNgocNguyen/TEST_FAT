@@ -12,14 +12,11 @@ gcloud auth configure-docker asia-southeast1-docker.pkg.dev
 
 Ở thư mục có Dockerfile:
 
-docker build -t asia-southeast1-docker.pkg.dev/PROJECT_ID/ml-images/custom-trainer:latest .
+docker build -t asia-southeast1-docker.pkg.dev/ext-bidv-eda-internal/ml-images/custom-trainer:latest .
 
-
-📌 Thay PROJECT_ID bằng project thật của bạn
-(ví dụ: ext-bidv-eda-internal)
 
 4. Push image
-docker push asia-southeast1-docker.pkg.dev/PROJECT_ID/ml-images/custom-trainer:latest
+docker push asia-southeast1-docker.pkg.dev/ext-bidv-eda-internal/ml-images/custom-trainer:latest
 
 
 Nếu push thành công → Artifact Registry UI sẽ thấy image.
